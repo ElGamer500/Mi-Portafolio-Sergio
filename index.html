@@ -153,76 +153,245 @@
 
  
   <div class="container px-4 py-5" id="custom-cards">
-
     <h2 id="Proyectos" class="pb-2 border-bottom">Proyectos</h2>
-    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('img/sandia.empaque2.jpeg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Check-intime</h2>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                
-              </li>
-              <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                <small>Earth</small>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                <small>3d</small>
-              </li>
-            </ul>
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 customers">
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('img/check/login_S.png');">
+                <div class="overlay"></div>
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Check Intime</h2>
+                    <div class="mt-auto d-flex flex-column flex-md-row align-items-start">
+                        <button type="button" class="btn custom-btn bg-gradient btn-sm me-md-2 mb-2 mb-md-0" data-bs-toggle="modal" data-bs-target="#VerCheck"><small><b>Ver</b></small></button>
+                        <button type="button" class="btn custom-btn bg-gradient btn-sm me-md-2 mb-2 mb-md-0" data-bs-toggle="modal" data-bs-target="#check"><small><b>Descripción</b></small></button>
+                        <a href="" class="ms-md-auto" data-bs-toggle="tooltip" data-bs-placement="top" title="Visitar">
+                            <img src="img/github-mark-white.png" alt="Git" width="32" height="32" class="rounded-circle border border-white">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('img/Autopartes/alternadores_autopartes.png');">
+                <div class="overlay"></div>
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Mundo Autopartes</h2>
+                    <div class="mt-auto d-flex flex-column flex-md-row align-items-start">
+                        <button type="button" class="btn custom-btn bg-gradient btn-sm me-md-2 mb-2 mb-md-0" data-bs-toggle="modal" data-bs-target="#VerMundoAuto"><small><b>Ver</b></small></button>
+                        <button type="button" class="btn custom-btn bg-gradient btn-sm me-md-2 mb-2 mb-md-0" data-bs-toggle="modal" data-bs-target="#MundoAuto"><small><b>Descripción</b></small></button>
+                        <a href="" class="ms-md-auto" data-bs-toggle="tooltip" data-bs-placement="top" title="Visitar">
+                            <img src="img/github-logo.png" alt="Git" width="32" height="32" class="rounded-circle border border-white">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('img/comer_para_sanar/comer_para_sanar_logo.jpeg');">
+                <div class="overlay"></div>
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Comer para sanar</h2>
+                    <div class="mt-auto d-flex flex-column flex-md-row align-items-start">
+                        <button type="button" class="btn custom-btn bg-gradient btn-sm me-md-2 mb-2 mb-md-0" data-bs-toggle="modal" data-bs-target="#VerComerSanar"><small><b>Ver</b></small></button>
+                        <button type="button" class="btn custom-btn bg-gradient btn-sm me-md-2 mb-2 mb-md-0" data-bs-toggle="modal" data-bs-target="#comerSanar"><small><b>Descripción</b></small></button>
+                        <a href="https://elgamer500.github.io/ComerParaSanar/index.html" class="ms-md-auto" data-bs-toggle="tooltip" data-bs-placement="top" title="Visitar">
+                            <img src="img/github-logo.png" alt="Git" width="32" height="32" class="rounded-circle border border-white">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="check" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Check intime</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary bg-gradient" data-bs-dismiss="modal">Close</button>
+        <a href="https://elgamer500.github.io/ComerParaSanar/index.html" class="btn btn-primary bg-gradient">Ir</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="VerCheck" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="verCheckExampleModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="verCheckExampleModal">Check intime</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="vercheck" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/check/login_S.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/check/perfil-registro-check.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/check/actividad-check.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/check/perfil-datos-usuario-check.png" class="d-block w-100" alt="...">
+            </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#vercheck" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#vercheck" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
-
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('img/sandia-empaque.jpeg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Mundo Autopartes</h2>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="d-flex align-items-center me-3">
-                <button type="button" class="btn btn-outline-light btn-sm"><small>Ver</small></button>
-              </li>
-              <li class="d-flex align-items-center mx-2">
-                <button type="button" class="btn btn-outline-light btn-sm"><small>Descripción</small></button>
-              </li>
-              <li class="me-auto" data-bs-toggle="tooltip" data-bs-placement="top" title="Visitar">
-                <a href="https://github.com/twbs.png"><img src="img/github-mark-white.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white mx-2"></a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-secondary bg-gradient" data-bs-dismiss="modal">Close</button>
       </div>
+    </div>
+  </div>
+</div>
 
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('img/unsplash-photo-3.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Comer Para </h2>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-              </li>
-              <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                <small>California</small>
-              </li>
-              <li class="d-flex align-items-center">
-                <small>5d</small>
-              </li>
-            </ul>
-          </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="MundoAuto" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Mundo Autopartes</h5>
+          <button type="button" class="btn-close bg-gradient" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p> MundoAutopartes es una página web para la venta de autopartes eléctricas. 
+            La plataforma permite a los usuarios registrarse, iniciar sesión y comprar partes eléctricas. 
+            Los administradores pueden gestionar productos y proveedores, facilitando la administración y actualización
+            de la información de manera sencilla y eficiente.
+          </p> 
+          <h6>Tecnologías Utilizadas</h6> 
+            <p>HTML5, CSS, Bootstrap, Node.js, EJS, JavaScript, MySQL</p> 
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-secondary bg-gradient" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
-    
+  </div>
+<!-- Modal -->
+  <div class="modal fade" id="VerMundoAuto" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Mundo Autopartes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/Autopartes/login_mundoA.png" class="d-block w-100 w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/Autopartes/Principal_autopartes.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/Autopartes/alternadores_autopartes.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/Autopartes/perfil_autopates.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/Autopartes/provedores_mundo.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-secondary bg-gradient" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
   </div>
 
+<!-- Modal -->
+<div class="modal fade" id="comerSanar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary bg-gradient" data-bs-dismiss="modal">Close</button>
+        <a href="https://elgamer500.github.io/ComerParaSanar/index.html" class="btn btn-primary bg-gradient">Ir</a>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- Modal -->
+<div class="modal fade" id="VerComerSanar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="verComerSanarExampleModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="verComerSanarExampleModal">Comer Para Sanar</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="verSanar" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/comer_para_sanar/header.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/comer_para_sanar/carusel.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/comer_para_sanar/footer.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#verSanar" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#verSanar" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-secondary bg-gradient" data-bs-dismiss="modal">Close</button>
+        <a href="https://elgamer500.github.io/ComerParaSanar/index.html" class="btn btn-primary bg-gradient">Ir</a>
+      </div>
+    </div>
+  </div>
+</div>
 
-
-  
 
 
 
