@@ -1,8 +1,8 @@
 /* GLOBAL STYLES -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  background-color: #dbdbdb;
+  padding-top: 4rem;
   color: #3e3e3e;
 }
 
@@ -47,7 +47,8 @@ body {
 
 /* Featurettes ------------------------- */
 .featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  visibility: hidden;
+  
 }
 
 /* Thin out the marketing headings */
@@ -81,8 +82,7 @@ body {
 /* MARKETING CONTENT -------------------------------------------------- */
 /* Center align the text within the three columns below the carousel */
 .marketing {
-  background-color: rgb(218, 218, 218);
-  border-radius: 50px;
+  background-color: rgb(171, 171, 171);
 }
 
 .marketing .col-lg-4 {
@@ -174,6 +174,7 @@ body {
   transition: 0.5s;
 }
 
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: #545edb; /* Cambia el color a negro */
@@ -195,4 +196,55 @@ body {
 
 .card-cover .d-flex {
   z-index: 2; /* Asegura que el contenido esté por encima del overlay */
+}
+
+
+/* slider */
+.slider {
+  width: 75vw;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider .slide-track {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 40s linear infinite;
+  width: calc(200px * 22);
+}
+
+.slider .slide {
+  width: 200px;
+}
+
+.slider .slide img {
+  width: 100%;
+}
+
+@keyframes scroll {
+  0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+  }
+  100% {
+      -webkit-transform: translateX(calc(-200px * 7));
+      transform: translateX(calc(-200px * 7));
+  }
+}
+
+
+
+
+
+
+
+/* footer */
+footer a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+footer i {
+  margin-right: 8px;
 }
